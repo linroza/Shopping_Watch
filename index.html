@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Watch Shop</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="https://rajamanickam.vercel.app/favicon-rajamanickam.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <main>
+      <!-- responsive menu bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
+         <a class="navbar-brand" href="#"><strong>Lin Roza</strong></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mx-auto ">
+               <li class="nav-item active"><a class="nav-link text-white h5" href="index.html">Home</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="lady.html">Lady Watch</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="men.html">Men Watch</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="Register.html">Register</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="contact.html">Contact Us</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ">
+               <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Search" aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+         </div>
+      </nav>
+       <!-- responsive slide  -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="https://www.goldsmiths.co.uk/medias/watches-sale-extra10-desktop-jan24.jpg?context=bWFzdGVyfGltYWdlc3wxNzYzMTB8aW1hZ2UvanBlZ3xpbWFnZXMvaDg0L2g4ZC85MjU3NTEwNzMxODA2LmpwZ3xmNDQxMjUxNDJkNTlkZDI1M2ZkNmIxMDFjNGE1NGYxZTBkYjVlYzU3NzczNjBhZmVmNTU0MjQ0NThlOTFiMWM1&imwidth=1920" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://www.goldsmiths.co.uk/medias/gs-watches-breitling-hero-desktop-jan24.jpg?context=bWFzdGVyfGltYWdlc3wyNDUzNDl8aW1hZ2UvanBlZ3xpbWFnZXMvaDZmL2hiYy85MjU3MDY1MTUyNTQyLmpwZ3xjOWQyYmFlOTMzYzJmNmQ4NjA4MDc0NmRiMzMwYjQ1YzBlMmY5OTM3NzllNDUzM2RhMGYzYWQ0NjEzNDJhYjVh&imwidth=1920" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://www.goldsmiths.co.uk/medias/panerai-hero-desktop-watches-nov23.jpg?context=bWFzdGVyfGltYWdlc3wyMzMwMTl8aW1hZ2UvanBlZ3xpbWFnZXMvaGMwL2hhZS85MjQ4MjM3Mjg5NTAyLmpwZ3xlNzNkMGU4ZDJlZWE3NTQyZGE2MjU3OTMzYTFmMTI5NGI0OTdiY2EzNTM1MmQ0ZTFmMjg0Y2M5OTM2MWJmNmUw&imwidth=1920" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://www.goldsmiths.co.uk/medias/watches-preowned-desktop-may23.jpg?context=bWFzdGVyfHJvb3R8NDkwMDQxfGltYWdlL2pwZWd8aDljL2g0Zi85MjIyMzQxMzk0NDYyLmpwZ3w2ZTk3M2QxNzc1Mzk3Nzk3MmQ1MWM1ZjliOGYyNWRhMTkyOGUzNTNiYzVhNjJmZDViMDcwM2Q2YTIxMGNkOTEy&imwidth=1920" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://www.goldsmiths.co.uk/medias/gs-watches-luxury-desktop-feb23.jpg?context=bWFzdGVyfHJvb3R8MzA2MjgxfGltYWdlL2pwZWd8aDgzL2g0Ni85MjA5MjQ2NjQ2MzAyLmpwZ3w1YTI1NWVkY2QyMTVlMTgwMzgzNGY4MzI0ZDQyMDgxYmU2MjEyYjE4OTI5MTdjYzgxYzJhZDczNmQ3N2IzODI3&imwidth=1920" class="d-block w-100" alt="...">
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <!-- list productts cards -->
+      <section> 
+         <div class="featured-area pt-3 pb-70">
+            <div class="container">
+               <h1 class="text-center text-capitalize">List All Watch Products</h1>
+               <div class="tab featured-tab-area">
+                  <div class="tab_content current active pt-3"> 
+                     <div class="tabs_item current">
+                        <div class="row justify-content-center">
+                           <!-- List Lady Watch -->
+                           
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">CITIZEN</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1200 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="CITIZEN" data-price="1200" class="default-btn border-radius-5"> Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">SEIKO</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="SEIKO" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady3.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">TISSOT Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="TISSOT-Watch" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady4.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">ICE-WATCH</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 800 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="ICE-WATCH" data-price="800" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady5.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Culotte Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Culotte-Watch" data-price="2459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady6.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Fire Boltt Dazzle </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1999 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Fire-Boltt" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                           <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady7.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cuban Collar Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 499 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cuban-Collar" data-price="499" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                           </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady8.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Babydoll Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1159 </h4>
+                                       <span>(4.0)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Babydoll-Watch" data-price="1159" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady9.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Lora Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Lora-Watch" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady10.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">BREITLING</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 700 </h4>
+                                       <span>(3.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="BREITLING" data-price="700" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady11.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Kieselect KS2</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Kieselect-KS2" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady12.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">titan Power</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="titan-Power" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady13.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Dior Glaxy</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1200 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Dior-Glaxy" data-price="1200" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady14.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Dimond Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 800 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Dimond-Watch" data-price="800" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady15.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">BREITLING silver</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 499 </h4>
+                                       <span>(4.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="BREITLING-silver" data-price="499" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/lady16.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">BREITLING Gold</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 700 </h4>
+                                       <span>(3.9)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="BREITLING-Gold" data-price="700" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- List Men Watch -->
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Tunic dimond</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic-dimond" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">KS Mini</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="KS-Mini" data-price="2459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men3.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Babydoll Doble Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1159 </h4>
+                                       <span>(4.0)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Babydoll-Doble" data-price="1159" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men4.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Samany Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Samany-Watch" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men5.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei Watch Buds</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Watch" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men6.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Fire Boltt Dazzle </a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1999 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Fire-Boltt" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men7.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Golden Glory</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Golden-Glory" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men8.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Andry Y Plus</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Andry-watch" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men9.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Crystal Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Crystal-Watch" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men10.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Dior smt Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1999 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Dior-watch" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men11.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Crystal Ice</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Crystal-Ice" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men12.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Golden Plus</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Golden-Plus" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men13.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Luxary Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 4059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Luxary-Watch" data-price="4059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men14.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Dimond Plus Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1999 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Dimond-yellow" data-price="1999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men15.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">PSL Dimond</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 2059 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="PSL-Dimond" data-price="2059" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Watch/men16.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Mister Watch</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 459 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Mister-Watch" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Modal Total Price -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- Link jquery -->
+   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+   <!-- Link Javascrip -->
+   <script src="script.js"></script>
+
+
+</body>
+
+</html>

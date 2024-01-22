@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="https://rajamanickam.vercel.app/favicon-rajamanickam.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+   <style>
+       @media (max-width: 576px) { 
+      .container{
+        width: 100vw !important;
+      }
+      h1{
+        font-size: 26px !important;
+      }
+    }
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
+        <a class="navbar-brand" href="#"><strong>Lin Roza</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+           </ul>
+           <ul class="navbar-nav mx-auto ">
+              <li class="nav-item active"><a class="nav-link text-white h5" href="index.html">Home</a></li>
+              <li class="nav-item active"><a class="nav-link text-white h5" href="lady.html">Lady Watch</a></li>
+              <li class="nav-item active"><a class="nav-link text-white h5" href="men.html">Men Watch</a></li>
+              <li class="nav-item active"><a class="nav-link text-white h5" href="Register.html">Register</a></li>
+              <li class="nav-item active"><a class="nav-link text-white h5" href="contact.html">Contact Us</a></li>
+           </ul>
+           <form class="form-inline my-2 my-lg-0 ">
+              <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Search" aria-label="Search">
+           </form>
+           <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+              data-target="#staticBackdrop">
+               <i class="fas fa-shopping-cart total-count"></i>
+           </button>
+        </div>
+     </nav>
+      <!-- slide -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.goldsmiths.co.uk/medias/watches-sale-extra10-desktop-jan24.jpg?context=bWFzdGVyfGltYWdlc3wxNzYzMTB8aW1hZ2UvanBlZ3xpbWFnZXMvaDg0L2g4ZC85MjU3NTEwNzMxODA2LmpwZ3xmNDQxMjUxNDJkNTlkZDI1M2ZkNmIxMDFjNGE1NGYxZTBkYjVlYzU3NzczNjBhZmVmNTU0MjQ0NThlOTFiMWM1&imwidth=1920" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.goldsmiths.co.uk/medias/gs-watches-breitling-hero-desktop-jan24.jpg?context=bWFzdGVyfGltYWdlc3wyNDUzNDl8aW1hZ2UvanBlZ3xpbWFnZXMvaDZmL2hiYy85MjU3MDY1MTUyNTQyLmpwZ3xjOWQyYmFlOTMzYzJmNmQ4NjA4MDc0NmRiMzMwYjQ1YzBlMmY5OTM3NzllNDUzM2RhMGYzYWQ0NjEzNDJhYjVh&imwidth=1920" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.goldsmiths.co.uk/medias/panerai-hero-desktop-watches-nov23.jpg?context=bWFzdGVyfGltYWdlc3wyMzMwMTl8aW1hZ2UvanBlZ3xpbWFnZXMvaGMwL2hhZS85MjQ4MjM3Mjg5NTAyLmpwZ3xlNzNkMGU4ZDJlZWE3NTQyZGE2MjU3OTMzYTFmMTI5NGI0OTdiY2EzNTM1MmQ0ZTFmMjg0Y2M5OTM2MWJmNmUw&imwidth=1920" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.goldsmiths.co.uk/medias/watches-preowned-desktop-may23.jpg?context=bWFzdGVyfHJvb3R8NDkwMDQxfGltYWdlL2pwZWd8aDljL2g0Zi85MjIyMzQxMzk0NDYyLmpwZ3w2ZTk3M2QxNzc1Mzk3Nzk3MmQ1MWM1ZjliOGYyNWRhMTkyOGUzNTNiYzVhNjJmZDViMDcwM2Q2YTIxMGNkOTEy&imwidth=1920" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.goldsmiths.co.uk/medias/gs-watches-luxury-desktop-feb23.jpg?context=bWFzdGVyfHJvb3R8MzA2MjgxfGltYWdlL2pwZWd8aDgzL2g0Ni85MjA5MjQ2NjQ2MzAyLmpwZ3w1YTI1NWVkY2QyMTVlMTgwMzgzNGY4MzI0ZDQyMDgxYmU2MjEyYjE4OTI5MTdjYzgxYzJhZDczNmQ3N2IzODI3&imwidth=1920" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+    <div class="container">    
+      <form>
+        
+        <div class="form-group mx-auto p-5 pt-0 ">
+          <h1 class="text-center text-capitalize font-weight-bold my-3">Form Register</h1>
+            <label for="">Full Name : </label>
+            <input type="text" class="form-control my-2" name="username" id="name" placeholder="Name : ">
+            <label for="" class="">Email: </label>
+            <input type="text" class="form-control my-2" name="email" id="email" placeholder="Email : ">
+            <label for="" class="">Address : </label>
+            <input type="text" class="form-control my-2" name="address" id="add" placeholder="Address : ">
+            <label for="">Password : </label>
+            <input type="text" name="password" class="form-control" id="password" placeholder="password : ">  
+            <div>
+                <input type="checkbox" name="" id="show"><span class="mx-1" style="font-size: 14px;">Show password</span>
+            </div> 
+            
+            <button type="submit" class="btn btn-primary my-2 " name="submit" id="btn-add">Submit</button>
+            <button class="btn btn-danger mx-2">Reset</button>
+        </div>
+    </form>
+    </div>
+</body>
+ <!-- Link jquery -->
+ <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+ 
+ <!-- Link Javascript -->
+<script src="script.js"></script>
+<script>
+    //register close and open eyes
+  var Inputpass = document.getElementById('password');
+        var show =document.getElementById('show');
+        show.addEventListener('click',function(){
+            let spanalert =document.querySelector('span');
+            if(this.checked){
+                Inputpass.type = 'text';
+                spanalert.innerHTML = 'Hide Password';
+            }
+            else{
+                Inputpass.type = 'password';
+                spanalert.innerHTML = 'Show Password';
+            }
+        });
+</script>
+
+</html>
